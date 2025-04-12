@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room QR Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    NavAIgator
+  </header>
+
+  <main>
+    <h2>Scan or Upload Room QR Code</h2>
+
+    <button onclick="startVoiceInput()">🎙 Set Destination via Voice</button>
+
+    <div id="qr-reader"></div>
+
+    <div class="map-container">
+      <canvas id="map-canvas" width="500" height="600"></canvas>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="script.js"></script>
+</body>
+</html>
